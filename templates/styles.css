@@ -3,7 +3,7 @@
 /* Style Sheet */
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	
@@ -23,7 +23,7 @@
 	--robinsegg: #2FDECA;
 	--steelblue: #609FBD;
 	--desertsand: #D8B56A;
-  	--lightpurple: #D0A8D0;
-  	--brightorange: #FF5219;
-  	--lightgreen: rgb(152, 245, 152);
+  --lightpurple: #D0A8D0;
+  --brightorange: #FF5219;
+  --lightgreen: rgb(152, 245, 152);
 }
