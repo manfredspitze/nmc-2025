@@ -1,3 +1,29 @@
 /* Mike Jenkins */
-/* 07 MAY 20XX */
-/* Web Design Challenge */
+/* 07 JAN 2025 */
+/* Style Sheet */
+
+* {
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+}
+
+:root {
+	font-size: 16px;
+	font-family: 'Helvetica Neue', sans-serif;
+	width: 100%;
+
+	--page-bg: #C2CFC3;
+	--charcoal: #413333;
+	--orange: #F1581B;
+	--limegreen: #96F11B;
+	--skyblue: #1B8DF1;
+	--flatblue: #76CDE2;
+	--robinsegg: #2FDECA;
+	--steelblue: #609FBD;
+	--desertsand: #D8B56A;
+  --lightpurple: #D0A8D0;
+  --brightorange: #FF5219;
+  --lightgreen: rgb(152, 245, 152);
+}
