@@ -14,6 +14,11 @@
     font-family: 'Helvetica Neue', sans-serif;
     width: 100%;
 
+    --black: #000;
+    --white: #fff;
+    --red: #ff0000;
+    --green: #00ff00;
+    --blue: #0000ff;
     --page-bg: #C2CFC3;
     --charcoal: #413333;
     --orange: #F1581B;
