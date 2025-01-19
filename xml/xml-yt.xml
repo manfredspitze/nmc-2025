@@ -1,1 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<friendsList>
+    <friend>
+        <firstName>Carli</firstName>
+    </friend>
+    <friend>
+        <firstName>Rachel</firstName>
+    </friend>
+    <friend>
+        <firstName>Jennifer</firstName>
+    </friend>
+    <friend>
+        <firstName>Carlos</firstName>
+    </friend>
+    <bestFriend>
+        <firstName>Mikey</firstName>
+    </bestFriend>
+</friendsList>
 
