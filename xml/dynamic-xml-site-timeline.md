@@ -1,5 +1,7 @@
 ### Two-Week Lesson Plan: Building a Searchable, Dynamic Web Page with XML and Modern JavaScript
 
+### WIKI LINK
+https://github.com/manfredspitze/nmc-2025/wiki/Day-3:-Basics-of-JavaScript
 
 ### Materials Needed
 - Code editor (e.g., VSCode)
