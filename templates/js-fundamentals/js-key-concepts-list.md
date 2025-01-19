@@ -1,4 +1,4 @@
-Here is the list of key concepts and skills for your 11th and 12th grade web programming students to learn about JavaScript this semester, formatted using Markdown:
+## Key JS Concepts 2025
 
 1. **Variables and Data Types**: Teach students how to declare and use variables in JavaScript, as well as the different data types (strings, numbers, booleans, etc.).
 
