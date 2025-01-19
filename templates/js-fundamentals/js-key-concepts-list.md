@@ -18,4 +18,4 @@
 
 9. **Debugging**: Teach students how to use the browser's developer tools to debug their JavaScript code and identify and fix errors.
 
-10. **Best Practices**: Discuss coding conventions, naming conventions, and other best practices for writing clean, maintainable JavaScript code.
+10. **Pro Tips**: Discuss coding conventions, naming conventions, and other pro tips for writing clean, maintainable JavaScript code.
