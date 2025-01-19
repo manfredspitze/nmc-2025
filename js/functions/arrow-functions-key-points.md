@@ -14,7 +14,7 @@ Here are the most important points to remember about arrow functions in JavaScri
 
 For example:
 
-$$
+```javascript
 // Traditional function
 let square = function(x) {
   return x * x;
@@ -22,4 +22,4 @@ let square = function(x) {
 
 // Arrow function
 let square = (x) => x * x;
-$$
+```
