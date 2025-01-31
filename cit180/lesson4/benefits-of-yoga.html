@@ -1,43 +1,96 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Benefits of Yoga</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marck+Script">
 <style>
 body, html {
-	font-family:  cursive;
+	font-family: 'Marck Script', cursive;
 	font-size: 16pt;
 	height: 100%;
 	background-color: black;
 }
+
+.parallax {
+  /* The image used */
+  background-image: url("media/yoga-background.jpg");
+  /* Full height */
+  height: 100%;
+  /* Create parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 section {
 	padding: 2%;
 	color: black;
 	width: 50%;
 	background-color: #fded7e;
-	opacity: .6;
+	opacity: 0.6;
 	border-radius: 0px 60px 60px 0px;
+}
+
+#title {
+  font-size: 36pt;
+  text-align: left;
+  color: white;
+  text-shadow: 5px 5px 2px gray;
+  letter-spacing: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#subtitle {
+  font-size: 18pt;
+  text-align: left;
+  color: white;
+  letter-spacing: 10px;
+  margin: 0px;
+}
+
+.dashedBorder {
+  border-bottom: dashed 2px gray;
+  width: 25%;
+}
+
+.border {
+  height: 4px;
+  margin-bottom: 0px;
+  background-color: #fded7e;
+  opacity: 0.9;;
+}
+
+.heading {
+  font-weight: 900;
 }
 </style>
 </head>
-<body>
+<body> 
 <header>
-  <hr>
-  <p>Top 10 Health Benefits Of Yoga</p>
-  <p>By Ann Pizer</p>
-  <hr>
+  <hr class="border">
+  <p id="title">Top 10 Health Benefits Of Yoga</p>
+  <p id="subtitle">By Ann Pizer</p>
+  <hr class="border">
 </header>
-<section>
-    <p>You've probably heard that yoga is good for you. Maybe you have even tried it and discovered that it makes you feel better. A regular practice can offers all kinds of mental and physical health benefits. Some, like improved flexibility, are clearly evident. Others, including mental clarity and stress reduction, may be more subtle but are just as powerful. When put together, all the benefits below contribute to an increased feeling of well-being, which helps explain why so many people find yoga so addictive.</p>
-    <p> Improves Flexibility:   Moving and stretching in new ways will help you become more flexible, bringing a greater range of motion to tight areas. Over time, you can expect to gain flexibility in your hamstrings, back, shoulders, and hips. As we age, our flexibility usually decreases, especially if you spend a lot of time sitting, which leads to pain and immobility. Yoga can help reverse this process.</p>
-    <p> Builds Strength:   Many yoga poses require you to bear your body weight in new ways, including balancing on one leg (as in tree pose) or supporting yourself with your arms (as in downward facing dog). Holding these poses over the course of several breaths helps build muscular strength.</p>
-    <p> Increases Muscle Tone and Definition:   As a by-product of getting stronger, you can expect to see increased muscle tone. Yoga helps shape long, lean muscles in your legs, arms, back, and abdomen.</p>
-    <p> Improves Balance:   Improved balance is one of the most important benefits of yoga as you get older. Poses where you stand on one leg and, for more advanced students, inversions, are great ways to build the core strength that keeps you upright.</p>
-    <p> Supports Joint Health:   The movements necessary for yoga are low impact, allowing you to use your joints without injuring them. Yoga also helps strengthen the muscles around the joints, lessening their load. People with arthritis often see a marked improvement in their pain and mobility with regular gentle yoga practice.</p>
-    <p> Prevents Back Pain:   Increased flexibility and strength can help prevent the causes of some types of back pain. Many people who have back pain spend a lot of time sitting at a computer or driving a car, which causes tightness throughout the body and spinal compression. Yoga counteracts these conditions.</p>
-    <p> Teaches Better Breathing:   Most of us take shallow breaths and don't give much thought to how we breathe. Yoga breathing exercises, called pranayama, focus our attention on breathing and teach us how to take deeper breaths, which benefits the entire body. Certain types of breath can also help clear the nasal passages (helpful for people with allergies) and even calm the nervous system, which has physical and mental benefits on and off the mat.</p>
-    <p> Fosters Mental Calmness:   Yoga asana practice is intensely physical. Concentrating so intently on what your body is doing has the effect of bringing calmness to your mind. Yoga also introduces you to meditation techniques, such as how to focus on your breath and disengage from your thoughts. These skills can prove to be very valuable in intense situations off the mat, like childbirth, a bout of insomnia, or when having an anxiety attack.</p>
-    <p> Reduces Stress:   Physical activity is good for relieving stress, and this is particularly true of yoga. Because of the concentration required, your daily troubles, both large and small, seem to melt away during the time you are on the mat. This provides a much-needed break from your stressors, as well as helping to put your problems into perspective. The emphasis yoga places on being in the present moment can also help as you learn not to dwell on past events or anticipate the future. You will leave a yoga class feeling less stressed than when you started.</p>
-    <p> Increases Self-Confidence:   Doing yoga will give you an increased awareness of your own body. You are often called upon to make small, subtle movements to improve your alignment. Over time, this will increase your level of comfort in your own body. This can lead to improved posture and greater self-confidence. </p>
-</section>
+<div class="parallax">
+  <section>
+      <p>You've probably heard that yoga is good for you. Maybe you have even tried it and discovered that it makes you feel better. A regular practice can offers all kinds of mental and physical health benefits. Some, like improved flexibility, are clearly evident. Others, including mental clarity and stress reduction, may be more subtle but are just as powerful. When put together, all the benefits below contribute to an increased feeling of well-being, which helps explain why so many people find yoga so addictive.</p>
+      <p><span class="heading">Improves Flexibility:</span>   Moving and stretching in new ways will help you become more flexible, bringing a greater range of motion to tight areas. Over time, you can expect to gain flexibility in your hamstrings, back, shoulders, and hips. As we age, our flexibility usually decreases, especially if you spend a lot of time sitting, which leads to pain and immobility. Yoga can help reverse this process.</p>
+      <p><span class="heading">Builds Strength:</span>   Many yoga poses require you to bear your body weight in new ways, including balancing on one leg (as in tree pose) or supporting yourself with your arms (as in downward facing dog). Holding these poses over the course of several breaths helps build muscular strength.</p>
+      <p><span class="heading">Increases Muscle Tone and Definition:</span>   As a by-product of getting stronger, you can expect to see increased muscle tone. Yoga helps shape long, lean muscles in your legs, arms, back, and abdomen.</p>
+      <p><span class="heading">Improves Balance:</span>   Improved balance is one of the most important benefits of yoga as you get older. Poses where you stand on one leg and, for more advanced students, inversions, are great ways to build the core strength that keeps you upright.</p>
+      <p><span class="heading">Supports Joint Health:</span>   The movements necessary for yoga are low impact, allowing you to use your joints without injuring them. Yoga also helps strengthen the muscles around the joints, lessening their load. People with arthritis often see a marked improvement in their pain and mobility with regular gentle yoga practice.</p>
+      <p><span class="heading">Prevents Back Pain:</span>   Increased flexibility and strength can help prevent the causes of some types of back pain. Many people who have back pain spend a lot of time sitting at a computer or driving a car, which causes tightness throughout the body and spinal compression. Yoga counteracts these conditions.</p>
+      <p><span class="heading">Teaches Better Breathing:</span>   Most of us take shallow breaths and don't give much thought to how we breathe. Yoga breathing exercises, called pranayama, focus our attention on breathing and teach us how to take deeper breaths, which benefits the entire body. Certain types of breath can also help clear the nasal passages (helpful for people with allergies) and even calm the nervous system, which has physical and mental benefits on and off the mat.</p>
+      <p><span class="heading">Fosters Mental Calmness:</span>   Yoga asana practice is intensely physical. Concentrating so intently on what your body is doing has the effect of bringing calmness to your mind. Yoga also introduces you to meditation techniques, such as how to focus on your breath and disengage from your thoughts. These skills can prove to be very valuable in intense situations off the mat, like childbirth, a bout of insomnia, or when having an anxiety attack.</p>
+      <p><span class="heading">Reduces Stress:</span>   Physical activity is good for relieving stress, and this is particularly true of yoga. Because of the concentration required, your daily troubles, both large and small, seem to melt away during the time you are on the mat. This provides a much-needed break from your stressors, as well as helping to put your problems into perspective. The emphasis yoga places on being in the present moment can also help as you learn not to dwell on past events or anticipate the future. You will leave a yoga class feeling less stressed than when you started.</p>
+      <p><span class="heading">Increases Self-Confidence:</span>   Doing yoga will give you an increased awareness of your own body. You are often called upon to make small, subtle movements to improve your alignment. Over time, this will increase your level of comfort in your own body. This can lead to improved posture and greater self-confidence. </p>
+  </section>
+</div>
+<div class="parallax"></div>
 </body>
 </html>
