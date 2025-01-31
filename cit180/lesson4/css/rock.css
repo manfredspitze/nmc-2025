@@ -1,0 +1,42 @@
+/* Bruce Provencher */
+/* 31 JAN 2025 */
+/* Task #5 -- Top Rock Project */
+
+header {
+    width: 50%;
+    text-align: center;
+    background-color: darkgreen;
+    color: white;
+    padding: 1%;
+}
+
+h1 {
+    color: navajowhite;
+    text-shadow: 1px 1px black;
+    font-size: 1.9em;
+}
+
+p {
+    margin-left: 20px;
+}
+
+a:link {
+    color: peachpuff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: tan;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: black;
+    background-color: peachpuff;
+    text-decoration: none;
+}
+
+a:active {
+    color: red;
+    text-decoration: underline;
+}

@@ -1,0 +1,93 @@
+/* Bruce Provencher */
+/* 31 JAN 2025 */
+/* Parallax Project */
+
+body, html {
+    height: 100%;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+article {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    color: ghostwhite;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.landslide {
+    background-image: url("../media/yellowstone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    height: 100%;
+    padding-bottom: 20px;
+    margin-top: 10%;
+    width: 75%;
+}
+
+.landslide p {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 20px;
+    opacity: 0.6;
+    padding: 10px;
+    width: 80%;
+}
+
+.landslide h1 {
+    margin-left: 1%;
+    color: ghostwhite;
+    text-shadow: 1px 1px black;
+    font-size: 1.5em;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.gypsy {
+    background-image: url("../media/lace.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    height: 100%;
+    padding-bottom: 20px;
+    width: 75%;
+}
+
+.gypsy p {
+    background-color: lemonchiffon;
+    color: black;
+    border-radius: 20px;
+    opacity: 0.4;
+    padding: 10px;
+    width: 80%;
+}
+
+.gypsy h1 {
+    margin-left: 1%;
+    text-shadow: 2px 2px 4px black;
+    font-size: 1.5em;
+    color: goldenrod;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../media/band.jpg");
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
