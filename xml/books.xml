@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<items>
-    <item>
-        <name>Item 1</name>
-        <description>Description for Item 1</description>
-    </item>
-    <item>
-        <name>Item 2</name>
-        <description>Description for Item 2</description>
-    </item>
-</items>
+<library>
+    <book>
+        <author>J.K. Rowling</author>
+        <title>Harry Potter and the Sorcerer's Stone</title>
+        <isbn>978-0439708180</isbn>
+        <price>19.99</price>
+        <publisher>Scholastic</publisher>
+    </book>
+    <book>
+        <author>J.R.R. Tolkien</author>
+        <title>The Hobbit</title>
+        <isbn>978-0547928227</isbn>
+        <price>14.99</price>
+        <publisher>Houghton Mifflin Harcourt</publisher>
+    </book>
+    <book>
+        <author>George Orwell</author>
+        <title>1984</title>
+        <isbn>978-0451524935</isbn>
+        <price>9.99</price>
+        <publisher>Signet Classics</publisher>
+    </book>
+    <book>
+        <author>F. Scott Fitzgerald</author>
+        <title>The Great Gatsby</title>
+        <isbn>978-0743273565</isbn>
+        <price>10.29</price>
+        <publisher>Scribner</publisher>
+    </book>
+    <book>
+        <author>Harper Lee</author>
+        <title>To Kill a Mockingbird</title>
+        <isbn>978-0061120084</isbn>
+        <price>7.19</price>
+        <publisher>Harper Perennial Modern Classics</publisher>
+    </book>
+    <book>
+        <author>Jane Austen</author>
+        <title>Pride and Prejudice</title>
+        <isbn>978-1503290563</isbn>
+        <price>9.99</price>
+        <publisher>Independently published</publisher>
+    </book>
+</library>
