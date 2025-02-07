@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Book Catalogue</h1>
+    <div id="book-list"></div>
+    <script>
+        // Function to fetch and display the book data
+        fetch('example.xml') // Replace with the path to your XML file
+            .then(response => response.text())  // Get the XML text
+            .then(data => {
+                // Parse the XML data
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(data, "application/xml");
+
+                // Get all book elements
+                const books = xmlDoc.getElementsByTagName("book");
+                const bookListDiv = document.querySelector('#book-list')
+
+                // Loop through all the books and extract information
+                for (let i = 0; i < books.length; i++) {
+                    const title = books[i].getElementsByTagName("title")[0].textContent;
+                    const author = books[i].getElementsByTagName("author")[0].textContent;
+                    const isbn = books[i].getElementsByTagName("isbn")[0].textContent;
+                    const price = books[i].getElementsByTagName("price")[0].textContent;
+
+                    //  Create new DIV for each book
+                    const bookDiv = document.createElement('div');
+                    bookDiv.className = 'book'
+
+                    // Create and append title
+                    const titleElement = document.createElement('h3');
+                    titleElement.textContent = title;
+                    bookDiv.appendChild(titleElement);
+
+                    // Create and append author
+                    const authorElement = document.createElement('p');
+                    authorElement.textContent = `Author: ${author}`;
+                    bookDiv.appendChild(authorElement);
+
+                    // Create and append ISBN
+                    const isbnElement = document.createElement('p');
+                    isbnElement.textContent = `ISBN: ${isbn}`;
+                    bookDiv.appendChild(isbnElement);
+
+                    //  Create and append suggested price
+                    const priceElement = document.createElement('p');
+                    priceElement.textContent = `Price: $${price}`;
+                    bookDiv.appendChild(priceElement);
+
+                    // Append the book div to the book list
+                    bookListDiv.appendChild(bookDiv);
+
+                }
+            })
+            .catch(error => console.error('Error loading XML:', error));
+    </script>
+</body>
+</html>

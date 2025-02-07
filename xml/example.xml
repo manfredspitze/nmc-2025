@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book>
+        <title>The Great Adventure</title>
+        <author>John Doe</author>
+        <isbn>978-1234567890</isbn>
+        <price>19.99</price>
+    </book>
+    <book>
+        <title>Learn XML for Beginners</title>
+        <author>Jane Smith</author>
+        <isbn>978-0987654321</isbn>
+        <price>29.99</price>
+    </book>
+    <book>
+        <title>Data Science Essentials</title>
+        <author>Michael Brown</author>
+        <isbn>978-1122334455</isbn>
+        <price>39.99</price>
+    </book>
+    <book>
+        <title>JavaScript in Action</title>
+        <author>Emily Johnson</author>
+        <isbn>978-5566778899</isbn>
+        <price>24.99</price>
+    </book>
+</library>
+

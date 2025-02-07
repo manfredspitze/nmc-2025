@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Information</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Book Catalog</h1>
+    <div id="bookList"></div>
+
+    <script>
+        // Function to fetch and display the book data
+        fetch('example.xml') // Replace with the path to your XML file
+            .then(response => response.text())  // Get the XML text
+            .then(data => {
+                // Parse the XML data
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(data, "application/xml");
+
+                // Get all book elements
+                const books = xmlDoc.getElementsByTagName("book");
+
+                // Create a list to hold the book information
+                let output = "<ul>";
+
+                // Loop through all the books and extract information
+                for (let i = 0; i < books.length; i++) {
+                    const title = books[i].getElementsByTagName("title")[0].textContent;
+                    const author = books[i].getElementsByTagName("author")[0].textContent;
+                    const isbn = books[i].getElementsByTagName("isbn")[0].textContent;
+                    const price = books[i].getElementsByTagName("price")[0].textContent;
+
+                    // Add each book to the output list
+                    // This is a template literal 
+                    output += `<li>
+                        <strong>Title:</strong> ${title}<br>
+                        <strong>Author:</strong> ${author}<br>
+                        <strong>ISBN:</strong> ${isbn}<br>
+                        <strong>Suggested Price:</strong> $${price}<br><br>
+                    </li>`;
+                }
+
+                output += "</ul>";  // Close the list
+                // Insert the output into the page
+                document.getElementById('bookList').innerHTML = output;
+            })
+            .catch(error => console.error('Error loading XML:', error));
+    </script>
+
+</body>
+</html>
