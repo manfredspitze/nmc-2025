@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Down on the Farm</title>
+  <style>
+  header {
+      border: 10px solid black;
+      padding: 2%;
+  }
+  h1 {
+      font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+      letter-spacing: 10px;
+      font-size: 3em;
+  }
+  h3 {
+      color: white;
+    text-shadow:1px 1px black;
+      font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+      font-size: 200%;
+  }
+  img {
+      width: 100%;
+  }
+
+  .child {
+    max-width: 35%;
+    min-width: 20%;
+    padding: 1%;
+    border: 10px groove white;
+    margin: 1%;
+    background-color: #000;
+    /* To display child elements horizontally */
+    /* float: left; */
+    flex: 1;
+  }
+
+  #parentBox {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    /* width: 50%; */
+    /* margin-left: 20%;
+    margin-right: 20%; */
+  }
+
+  .clearfloat {
+    clear: both;
+  }
+
+  </style>
+</head>
+
+<body>
+<header>
+  <h1>Down on the Farm</h1>
+</header>
+<article>
+  <section id="parentBox">
+    <div class="child">
+      <h3>1. Sheep</h3>
+      <img src="media/sheep.jpg" alt="sheep"> </div>
+    <div class="child">
+      <h3>2. Pigs</h3>
+      <img src="media/pigs.jpg" alt="pigs"> </div>
+    <div class="child">
+      <h3>3. Cows</h3>
+      <img src="media/cows.jpg" alt="cows"> </div>
+      <div class="clearfloat"></div>
+    <div class="child">
+      <h3>4. Horses</h3>
+      <img src="media/horses.jpg" alt="horses"> </div>
+    <div class="child">
+      <h3>5. Rabbits</h3>
+      <img src="media/bunnies.jpg" alt="rabbits"> </div>
+    <div class="child">
+      <h3>6. Dogs</h3>
+      <img src="media/dogs.jpg" alt="dogs"> </div>
+  </section>
+</article>
+</body>
+</html>
