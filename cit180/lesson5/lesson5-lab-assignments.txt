@@ -1,0 +1,15 @@
+
+1. Make new page with:
+
+- at least one ORDERED LIST
+- at least one UNORDERED LIST
+- at least one table
+
+2. Style lists and table as directed in assignment.
+
+3. Create new page using newspaper columns 
+- See CSS specs for newspaper columns page in Lesson 5 Lab assignment
+
+4. Update assignments.html page by converting paragraphs containing lesson links into unordered lists
+
+5. Update assignments.html page with the names of the new Lesson 5 projects
