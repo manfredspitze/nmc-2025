@@ -1,0 +1,42 @@
+/* Bruce Provencher */
+/* 04 FEB 2025 */
+/* Multicolumn Project */
+
+* {
+    /* CSS reset rule */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-family: 'Lato', sans-serif;
+    color: #2C2222;
+    background-color: #dfddd8;
+    margin: 2rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    color: #25a864;
+    font-weight: 800;
+  }
+
+  h3 { color: #1e814e; }
+
+  p, h3 { margin-top: 0; }
+
+  .columns {
+    column-count: 4;
+    column-width: 180px;
+    column-rule: 2px solid #1f7aaf;
+    column-gap: 1.8rem;
+  }
+
+  .intro {
+    /* Introduction will span all four columns */
+    column-span: all;
+    margin-bottom: 1.4rem;
+  }	

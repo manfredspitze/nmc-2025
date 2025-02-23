@@ -1,0 +1,70 @@
+﻿body{
+	font-family:"Berlin Sans FB","Eras Bold ITC", sans-serif;
+	font-size:1.4em;
+	background-color:black;	
+}
+main{
+	width:70%;
+	border: groove tan 30px;
+}
+header{
+	width:98%;
+	background-color:lemonchiffon;
+	padding:1%;
+	margin-top:0%;
+}
+footer{
+	width:98%;
+	background-color:tan;
+	text-align:center;
+	padding:1%;
+	font-size:.75em;
+}
+article{
+	width:98%;
+	background-color:lemonchiffon;
+	padding:1%;
+}
+
+aside {
+	width: 30%;
+	float: right;
+	overflow: auto;
+	border: inset 10px tan;
+	padding: 10px;
+	background-color: cornsilk;
+	background-image: url('../media/paper-texture.jpg');
+	font-size: 12pt;
+}
+
+h1 {
+	color: palegoldenrod;
+	text-shadow: 2px 2px 2px black;
+	font-family: "Brush Script MT", cursive;
+	font-size: 3em;
+	text-align: center;
+}
+
+h2 {
+	color: palegoldenrod;
+	/* -1px 0 is the left side, 0 1px is the bottom, 1px 0 is the right side, 0 -1px is the top */
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	border-bottom: 15px tan ridge;
+	letter-spacing: 8px;
+}
+
+summary {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1.25em;
+	font-style: italic;
+	color: brown;
+}
+
+details {
+	color: black;
+}
+
+ol, ul, dl {
+	line-height: 25pt;
+}
