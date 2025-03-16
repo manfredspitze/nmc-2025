@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Subgrid Test</title>
+    <style>
+
+        /*Source: https://youtu.be/Yl8hg2FG20Q?feature=shared */
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: Cambria, serif;
+            width: 95%;
+            margin-inline: auto;
+        }
+
+        img {
+            width: 100%;
+            /* display: block;  */
+            /* height: auto; */
+            height: 90%;
+            object-fit: cover;
+        }
+
+        .wrapper {
+            display: grid;
+            /* grid-template-columns: repeat(4, 1fr); */
+            /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+
+        .box {
+            display: grid;
+            grid-template-rows: subgrid;
+            /* grid-row: 1 / 4; */
+            grid-row: span 3;
+
+            border: 3px solid #999797;
+            border-radius: 3px;
+            padding: 2rem;
+            /* text-align: center; */
+        }
+
+    </style>
+</head>
+<body>
+    <section class="wrapper">
+        <div class="box">
+            <h2>Laughing</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nostrum quibusdam inventore error. Rem doloribus quidem distinctio laborum est laudantium. Amet consectetur adipisicing elit. Culpa debitis facilis sint similique velit, perferendis libero. Quod temporibus dolorum.</p>
+            <img src="model23.png" alt="Laughing girl in winter">
+        </div>
+
+        <div class="box">
+            <h2>Radiant Smile</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nostrum quibusdam inventore error. Rem doloribus quidem distinctio laborum est laudantium. Amet consectetur adipisicing elit. Culpa debitis facilis sint similique velit, perferendis libero. Quod temporibus dolorum.</p>
+            <img src="necklace.png" alt="Girl wearing a gold necklace">
+        </div>
+
+        <div class="box">
+            <h2>Jean Jacket</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nostrum quibusdam inventore error. Rem doloribus quidem distinctio laborum est laudantium. Amet consectetur dolorum.</p>
+            <img src="jean-jacket.jpg" alt="Model in a trendy jean jacket">
+        </div>
+
+        <div class="box">
+            <h2>Looking Out Into The Street</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nostrum quibusdam inventore error.</p>
+            <img src="looking-out-window.jpg" alt="Girl looking out the window">
+        </div>
+    </section>
+    
+</body>
+</html>
