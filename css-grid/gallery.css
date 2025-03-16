@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
+    gap: 1rem; /* Space between grid items */
+    padding: 1rem; /* Padding around the gallery */
+}
+
+.gallery-item {
+    overflow: hidden; /* Ensures images don't overflow their container */
+}
+
+.gallery-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom space under images */
+}

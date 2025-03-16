@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Image with Transparent Text</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  display: grid; /* Use CSS Grid */
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative; /* Keep this for the image */
+}
+
+.container img {
+  width: 100%; /* Ensure the image takes full width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.container .content {
+  display: grid; /* Use Grid for content */
+  align-items: end; /* Align content to the bottom */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  grid-row: 1; /* Place content in the first row */
+}
+
+.container img {
+  grid-row: 1; /* Place image in the first row */
+  grid-column: 1; /* Place image in the first column */
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Image with Transparent Text</h2>
+
+<div class="container">
+  <img src="looking-out-window.jpg" alt="Girl looking out the window">
+  <div class="content">
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+  </div>
+</div>
+
+</body>
+</html>

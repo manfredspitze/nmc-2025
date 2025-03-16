@@ -1,0 +1,48 @@
+.nav {
+    grid-area: nav;
+    background-color: mediumturquoise;
+    padding: 1rem; /* Adjust padding as needed */
+}
+
+.nav-list {
+    display: flex; /* Use Flexbox */
+    flex-direction: column;
+    justify-content: space-between; 
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.nav-item { margin-bottom: 0.5rem; }
+
+.nav-item:last-child { margin-bottom: 0; }
+
+.nav-item a {
+    text-decoration: none; /* Remove underline from links */
+    text-align: center;
+    background-color: rgb(67, 117, 139);
+    color: rgb(255, 255, 255); /* Change text color */
+    border: 1px solid grey;
+    
+    padding: 0.75rem; /* Add padding to links */
+    display: block;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-item a:hover {
+    background-color: rgba(28, 177, 28, 0.6); /* Change background on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .nav-list {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+
+    .nav-item a {
+        padding: 1rem; /* Increase padding for better touch targets */
+        width: 100%; /* Make links full width */
+        text-align: center; /* Center text */
+    }
+}

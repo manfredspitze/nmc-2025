@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Image with Transparent Text</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Stack children vertically */
+  max-width: 600px;
+  margin: 20px auto;
+  position: relative; /* Keep this for the image */
+
+  overflow: hidden;
+}
+
+.container img {
+  width: 100%; /* Ensure the image takes full width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.container .content {
+  display: flex; /* Use Flexbox for content */
+  flex-direction: column; /* Stack text vertically */
+  justify-content: flex-end; /* Align content to the bottom */
+  background: rgba(104, 102, 102, 0.705); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  max-height: fit-content; /* Set a max height for the content */;
+  overflow: auto;
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Image with Transparent Text</h2>
+
+<div class="container">
+  <img src="looking-out-window.jpg" alt="Looking out the window">
+  <div class="content">
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+  </div>
+</div>
+
+<div class="container">
+    <img src="windswept1.jpg" alt="Windswept">
+    <div class="content">
+      <h1>Heading</h1>
+      <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur.</p>
+    </div>
+  </div>
+
+</body>
+</html>
