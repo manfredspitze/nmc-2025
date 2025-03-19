@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD with CSS Subgrid</title>
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main grid layout */
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #f4f4f4;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* New property */
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+nav ul li {
+    background-color: rgb(255, 132, 0);
+    cursor: pointer;
+    padding: 0.5rem;
+    flex: 1;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav ul li:hover {
+    background-color: #6e9dd2;
+    color: #fff;
+}
+
+nav ul li a { text-decoration: none; }
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    /* padding: 2rem; */
+}
+
+.image-container figure img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #f4f4f4;
+    padding: 1rem;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    border: 1px solid #ccc;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+caption {
+    padding: 0.5rem 0;
+    background-color: #fff;
+    font-size: max(0.75rem, 3vw);
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    caption {
+        font-size: 4vw; /* Responsive font size based on viewport width */
+    }
+
+
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 601px) {
+    .container {
+        grid-template-areas: 
+            "header header"
+            "nav nav"
+            "main main"
+            "aside aside"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    caption {
+        font-size: 2vw;
+    }
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Using CSS Subgrid &amp; RWD</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="image-container">
+                <figure>
+                    <img src="fashion-girl.jpg" alt="Girl in a fashionable blue jacket">
+                    <caption>Caption for Image 1</caption>
+                </figure>
+            </div>
+            <div class="image-container">
+                <figure>
+                    <img src="windswept1.jpg" alt="Windswept hair">
+                    <caption>Caption for Image 2</caption>
+                </figure>
+            </div>
+            <div class="image-container">
+                <figure>
+                    <img src="jean-jacket.jpg" alt="Stylish jean jacket">
+                    <caption>Caption for Image 3</caption>
+                </figure>
+            </div>
+            <div class="image-container">
+                <figure>
+                    <img src="morning-journaling.jpg" alt="Journaling in the morning">
+                    <caption>Caption for Image 4</caption>
+                </figure>
+            </div>
+        </main>
+        <aside>
+            <h2>Aside</h2>
+            <p>This is some additional content in the aside section.</p>
+        </aside>
+        <footer>
+            <p>&copy; 2025 My Responsive Web Page</p>
+        </footer>
+    </div>
+</body>
+</html>
