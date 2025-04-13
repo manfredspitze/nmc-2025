@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carravaggio&apos;s Deli</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/deli.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Carravaggio&apos;s Lunch Order Form</h1>
+    </header>
+    <form name="lunch-orders" id="lunch-orders" action="https://lisabalbach.com/CIT180/Lesson8/FormProcessor.html" method="get">
+      <div class="left-column">
+        <fieldset>
+        <legend>Contact Info</legend>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" placeholder="Bob" autofocus required>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Smith" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="bsmith@example.com" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="231-555-1234" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" placeholder="12345 Oak Street">
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" placeholder="Anytown">
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" placeholder="Michigan">
+
+        <label for="zip">Zip:</label>
+        <input type="text" id="zip" name="zip" placeholder="12345">
+      </fieldset>
+      </div>
+      <div class="right-column">
+        <fieldset>
+        <legend>Order Info</legend>
+        <label for="side-orders">Side Order:</label>
+        <input list="sides" id="side-orders" name="side-orders" placeholder="Please choose a side...">
+        <datalist id="sides">
+          <option value="Kettle chips">
+          <option value="Dill pickle">
+          <option value="Coleslaw">
+          <option value="Potato salad">
+          <option value="BBQ beans">    
+        </datalist>
+        <input type="submit" value="Submit" class="side-order-submit">
+
+        <label for="dessert">Dessert:</label>
+        <select id="dessert" name="dessert" required>
+          <option value="">Please choose a dessert...</option>
+          <option value="Brownie">Brownie</option>
+          <option value="Sugar cookie">Sugar cookie</option>
+          <option value="Chocolate cake">Chocolate cake</option>
+          <option value="Cheesecake">Cheesecake</option>
+        </select>
+
+        <label for="beverage">Beverage:</label>
+        <select id="beverage" name="beverage" required>
+          <option value="">Please choose a beverage...</option>
+          <option value="Mineral water">Mineral water</option>
+          <option value="Orange juice">Orange juice</option>
+          <option value="Coca-Cola">Coca-Cola</option>
+          <option value="Root beer">Root beer</option>
+          <option value="Coffee">Coffee</option>
+        </select>
+
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method" name="payment-method" required>
+          <option value="">Please choose a payment method...</option>
+          <option value="Google Pay">Google Pay</option>
+          <option value="Apple Pay">Apple Pay</option>
+          <option value="VISA">VISA</option>
+          <option value="Mastercard">Mastercard</option>
+          <option value="Discover">Discover</option>
+        </select>
+
+
+        <label for="delivery-location">Delivery Location:</label>
+        <select id="delivery-location" name="delivery-location" required>
+          <option value="">Please choose a delivery location...</option>
+          <option value="My office">My office</option>
+          <option value="TVC Airport">TVC Airport</option>
+          <option value="Munson">Munson</option>
+          <option value="NMC">NMC</option>
+          <option value="USCG Air Station">USCG Air Station</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Are you a member of our Discount Club?</legend>
+        <label for="discount-club-yes">
+          <input type="radio" id="discount-club-yes" name="discount-club" value="yes">
+          Yes
+        </label>
+        <label for="discount-club-no">
+          <input type="radio" id="discount-club-no" name="discount-club" value="no" checked>
+          No
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>How did you hear about our deli?</legend>
+        <label for="radio-ad">
+          <input type="radio" id="radio-ad" name="advertising" value="Radio ad">
+          Radio
+        </label>
+        <label for="tv-ad">
+          <input type="radio" id="tv-ad" name="advertising" value="TV">
+          TV
+        </label>
+        <label for="online-ad">
+          <input type="radio" id="online-ad" name="advertising" value="Online">
+          Online
+        </label>
+      </fieldset>
+      </div>
+      <fieldset class="textarea-fieldset">
+        <legend>Special Requests/Instructions</legend>
+
+        <textarea id="comments" name="comments" rows="4" placeholder="Please let us know if you have any dietary restrictions.  Thank you for ordering today from Carravaggio's!"></textarea>
+      </fieldset>
+      <div class="form-buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+      <input type="hidden" name="mailto" id="mailto" value="provenb@mail.nmc.edu">
+    </form>
+  </div>
+</body>
+</html>
