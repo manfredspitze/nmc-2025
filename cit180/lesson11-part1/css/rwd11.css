@@ -1,0 +1,213 @@
+/* Bruce Provencher */
+/* 14 MAR 2025 */
+/* RWD Lesson 11 for NMC */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    --aqua: rgba(88, 204, 233, 0.952);
+    --aquamarine: #7fffd4;
+    --black: #000;
+    --blue: #00f;
+    --bluegrey: #b0c4de;
+    --cream: rgb(243, 240, 213);
+    --darkcharcoal: #5b5b5b;
+    --flatorange: rgba(241, 94, 68, 0.92);
+    --grey: rgb(146, 136, 136);
+    --green: #0f0;
+    --khaki: #f0e68c;
+    --lightblue: rgb(193, 230, 242);
+    --lightsteelblue: #b0c4de;
+    --lime: #86e45d;
+    --orange: rgb(250, 95, 28);
+    --plum: rgb(225, 16, 176);
+    --red: #f00;
+    --white: #fff;
+}
+
+.row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.row {
+    padding: 10px;
+}
+
+body {
+    font-family: 'Barlow', serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    width: 100%;
+    background-color: var(--darkcharcoal);
+    top: 0%;
+    color: var(--lightsteelblue);
+    padding: 20px;
+    height: auto;
+    text-align: center;
+    text-shadow: 2px 2px var(--bluegrey);
+}
+
+header h1 {
+    font-family: 'Barlow', serif;
+    text-shadow: 2px 2px var(--lightsteelblue);
+    color: var(--aqua);
+    font-size: 2.5rem;
+}
+
+.left-sidebar, .right-sidebar {
+    background-color: var(--lightsteelblue);
+}
+
+.left-sidebar ol, .right-sidebar ul, .right-sidebar ol, .right-sidebar ul {
+    padding: 15px;
+}
+
+.left-sidebar img, .right-sidebar img {
+    padding: 20px;
+}
+
+nav {
+    
+    background-color: var(--lightsteelblue);
+    width: 100%;
+    height: auto;
+    text-align: left;
+    clear: both;
+    float: left;
+}
+
+.left-sidebar h2, .right-sidebar h2, nav h2 {
+    margin-bottom: 5px;
+} 
+
+nav a { 
+    text-decoration: none; 
+    padding: 10px;
+}
+
+nav p { margin: 20px 0; }
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li { 
+    list-style-type: none;
+    margin-left: -35px;
+    margin: 5px 0;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    display: block;
+    background-color: var(--grey);
+    text-decoration: none;
+    color: var(--cream);
+}
+
+nav ul li a:hover, nav ul li a:active {
+    display: block;
+    background-color: var(--aqua);
+    color: var(--black);
+}
+  
+a:link {
+    color: var(--blue);
+}
+  
+a:visited {
+    color: var(--green);
+}
+  
+a:hover {
+    color: var(--orange);
+}
+  
+a:active {
+    color: var(--white);
+}
+
+div ul {
+    margin-left: 20px;
+}
+
+div ul li, .left-sidebar ul li {
+    padding: 5px 0;
+}
+
+.right-sidebar ul li, .right-sidebar ol li {
+    padding: 5px 0;
+}
+
+footer {
+    background-color: var(--darkcharcoal);
+    padding: 20px;
+    text-align: center;
+    color: var(--white);
+    font-weight: bolder;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets */
+    .col-m-1 { width: 8.33%; }
+    .col-m-2 { width: 16.66%; }
+    .col-m-3 { width: 25%; }
+
+    .col-m-4 { width: 33.33%; }
+    .col-m-5 { width: 41.66%; }
+    .col-m-6 { width: 50%; }
+
+    .col-m-7 { width: 58.33%; }
+    .col-m-8 { width: 66.66%; }
+    .col-m-9 { width: 75%; }
+
+    .col-m-10 { width: 83.33%; }
+    .col-m-11 { width: 91.66%; }
+    .col-m-12 { width: 100%; }
+
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop */
+    .col-1 { width: 8.33%; }
+    .col-2 { width: 16.66%; }
+    .col-3 { width: 25%; }
+
+    .col-4 { width: 33.33%; }
+    .col-5 { width: 41.66%; }
+    .col-6 { width: 50%; }
+
+    .col-7 { width: 58.33%; }
+    .col-8 { width: 66.66%; }
+    .col-9 { width: 75%; }
+
+    .col-10 { width: 83.33%; }
+    .col-11 { width: 91.66%; }
+    .col-12 { width: 100%; }
+
+    body {
+        max-width: 76.25rem;
+        background-color: var(--lightsteelblue);
+    }
+}

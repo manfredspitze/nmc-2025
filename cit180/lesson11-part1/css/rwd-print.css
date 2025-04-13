@@ -1,0 +1,67 @@
+/* Bruce Provencher */
+/* 14 MAR 2025 */
+/* RWD 11 Print Style Sheet */
+
+:root {
+    font-size: 16px;
+    --black: #000;
+    --white: #fff;
+}
+
+* {
+    color: var(--black);
+    font-size: 12pt;
+    font-family: Arial, serif;
+    background-color: var(--white);
+    border: none;
+    background: none;
+    text-shadow: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+}
+
+body { background-color: var(--white); }
+
+img, nav {
+    display: none;
+}
+
+div a:link, aside a:link, footer a:link {
+    text-decoration: underline;
+    color: black;
+}
+
+header, .left-sidebar, .right-sidebar {
+    font-family: Arial, serif;
+    background-color: var(--white);
+    text-shadow: none;
+    width: 100%;
+}
+
+header h1 {
+    font-family: Arial, serif;
+    font-weight: normal;
+    text-shadow: none;
+    color: var(--black);
+    font-size: 12pt;
+}
+
+h2 { font-weight: bold; font-size: 12pt; }
+
+footer {
+    font-family: Arial, serif;
+    font-size: 12pt;
+    font-weight: normal;
+    background-color: var(--white);
+    padding: 20px;
+    text-align: center;
+    color: var(--black);
+}
+
+title {
+    font-family: Arial, serif;
+    font-size: 12pt;
+}
+
