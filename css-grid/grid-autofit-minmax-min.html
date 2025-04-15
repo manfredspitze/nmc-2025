@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Grid Website</title>
+    <style>
+        /* .grid {
+            --column-count: 3;
+            display: grid;
+            grid-template-columns: repeat(var(--column-count), 1fr);
+            gap: 10px;
+        } */
+
+        /* min(200px, 100%): This ensures that each column is no wider than 200px but also respects the available space (up to 100% of the container's width). */
+        /* auto-fit: Automatically creates as many columns as can fit within the available space. */
+        /* minmax(..., 1fr): Sets the lower limit of column widths to the result of min(), while ensuring remaining space is distributed proportionally among columns. */
+
+        /* auto-fit: This automatically squeezes as many columns as possible into the available space. If there’s extra room, the columns stretch to fill it.
+
+        min(200px, 100%): Each column should be no wider than 200 pixels, but if the screen or container is smaller, it will shrink to fit (up to 100% of the available space).
+
+        minmax(...): Ensures columns will never get too small or disappear completely -- they’ll resize themselves within the specified range.
+
+        1fr: Any remaining space is evenly shared between columns. */
+
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+            gap: 10px;
+        }
+
+        .grid-item {
+            background-color: #81bae1;
+            border: 2px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <main>
+        <section class="grid">
+            <div class="grid-item">Item 1</div>
+            <div class="grid-item">Item 2</div>
+            <div class="grid-item">Item 3</div>
+            <div class="grid-item">Item 4</div>
+            <div class="grid-item">Item 5</div>
+            <div class="grid-item">Item 6</div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Simple Website</p>
+    </footer>
+</body>
+</html>
